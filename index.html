@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<link rel="stylesheet"  href="./lib/tau/mobile/theme/default/tau.css">
+	<link rel="stylesheet"  type="text/css" href="./css/style.css"/>
+	<title>Tizen Weather</title>
+</head>
+
+<body>
+	<!-- page -->
+	<div class="ui-page" id="main">
+	
+		<div class="ui-tabs">
+			<h1 class="ui-title">Tizen Weather</h1>
+			<div class="ui-tabbar">
+				<ul>
+					<li class="ui-li-anchor">
+						<a href="#" class="ui-tab-active">Current</a>
+					</li>
+					<li class="ui-li-anchor">
+						<a href="#">Forecast</a>
+					</li>
+				</ul>
+			</div>
+			<div class="ui-section-changer" id="sectionchanger">
+				<div>
+					<section data-items="section-1" class="ui-section-active">
+						<ul id="current-list" class="ui-listview">
+							<li class="ui-group-index">Location</li>
+							<li class="ui-li-static">
+								<img id="current_map" />
+							</li>
+							<li class="ui-li-static li-has-multiline" id="current_loc">Location</li>
+							<li class="ui-li-static li-has-multiline" id="current_date">Last Updated</li>
+							<li class="ui-group-index">Information</li>
+							<li class="ui-li-static li-has-multiline li-has-thumb" id="current_weather">Weather</li>
+							<li class="ui-li-static li-has-multiline" id="current_temp">Temperature</li>
+							<li class="ui-li-static li-has-multiline" id="current_humid">Humidity</li>
+							<li class="ui-li-static li-has-multiline" id="current_wind">Wind</li>
+							<li class="ui-li-static li-has-multiline" id="current_cloud">Cloud</li>
+							<li class="ui-li-static" id="current_clear">
+								<button id="clear_btn">Clear WebStorage</button>
+							</li>
+						</ul>
+					</section>
+					<section data-items="section-2">
+						<ul id="forecast-list" class="ui-listview">
+						</ul>
+					</section>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- popup -->
+	<div id="popup" class="ui-popup">
+		<div class="ui-popup-header">Tizen Weather</div>
+        <div class="ui-popup-content popup-content-padding">
+            Welcome to Tizen Weather Application!
+            <br><br>
+            this popup state will be saved in webStorage.
+        </div>
+        <div class="ui-popup-footer">
+            <a class="ui-btn" data-rel="back" data-inline="true">OK</a>
+        </div>
+	</div>
+	
+	<!-- toast -->
+	<div id="toast" class="ui-popup ui-popup-toast">
+		<div class="ui-popup-content">
+            webStorage cleared.
+        </div>
+	</div>
+
+	<script type="text/javascript" src="./lib/tau/mobile/js/tau.js"></script>
+	<script type="text/javascript" src="./lib/jquery.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>

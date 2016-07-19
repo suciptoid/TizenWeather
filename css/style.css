@@ -1,0 +1,282 @@
+/*************************************************
+				Popup
+**************************************************/
+
+.popup-content-padding {
+	padding: 18px 24px;
+}
+
+.ui-popup-header.popup-2line-title,
+.ui-popup-listview .ui-popup-header.popup-2line-title {
+	height: 62px;
+	padding: 0;
+}
+.popup-2line-title h1,
+.popup-2line-title h2 {
+	margin: 0;
+	font-weight: normal;
+}
+
+.popup-2line-title h1 {
+	font-size: 21px;
+	line-height: 28.5px;
+	padding-top: 13px;
+}
+.popup-2line-title h2 {
+	font-size: 15px;
+	line-height: 20.5px;
+}
+
+.ui-popup-listview .ui-popup-header.popup-2line-title h1 {
+	padding-top: 6.5px;
+}
+
+/* Contextual popup custom style*/
+.ui-popup.ui-ctxpopup.horizontal-ctxpopup {
+	max-width: 95%;
+}
+
+.ui-popup.ui-ctxpopup.horizontal-ctxpopup .ui-listview {
+	display: -webkit-flex;
+	vertical-align: middle;
+	margin: 0;
+	float: left;
+	white-space: nowrap;
+}
+
+.ui-popup.ui-ctxpopup.horizontal-ctxpopup .ui-listview li {
+	line-height: 37px;
+	height: 64px;
+	-webkit-flex: 1;
+	min-width: 73px;
+	border-right: 2px solid rgba(8, 8, 8, 0.2);
+	text-align: center;
+	border-bottom: none !important;
+	border-top: none;
+}
+
+.ui-popup.ui-ctxpopup:not(.horizontal-ctxpopup) .ui-listview li {
+	border-bottom: 2px solid rgba(8, 8, 8, 0.2);
+}
+
+.ui-popup.ui-ctxpopup:not(.horizontal-ctxpopup) .ui-listview li:last-child {
+	border-bottom: none;
+}
+
+.ui-popup.ui-ctxpopup.horizontal-ctxpopup .ui-listview li:last-child {
+	border-right: none;
+}
+
+.ui-popup.ui-ctxpopup.horizontal-ctxpopup .ui-listview li a {
+	padding: 13px 0;
+}
+
+#ctxpopup_horizontal_scroll .ui-listview{
+	width: 400px;
+}
+
+#ctxpopup_horizontal_2line .ui-listview li a {
+	width: 83px;
+	line-height: 30px;
+	padding: 17px 2px;
+	font-size: 15px;
+}
+#ctxpopup_horizontal_2line .ui-listview:first-child {
+	border-bottom: 2px solid rgba(8, 8, 8, 0.2);
+}
+
+/*************************************************
+				Listview
+**************************************************/
+
+.li-text-sub {
+	position: absolute;
+	top: 0;
+	right: 16px;
+	height: 100%;
+	line-height: 60px;
+	float: right;
+	text-align: right;
+	font-size: 16px;
+	color: rgba(77, 77, 77, 1);
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+/********************* list have right button **********************/
+.li-has-right-btn .ui-btn,
+.li-has-right-circle-btn .ui-btn {
+	position: absolute;
+	top: 50%;
+	right: 16px;
+}
+
+.li-has-right-btn .ui-btn {
+	margin-top: -20px;
+}
+
+.li-has-right-circle-btn .ui-btn {
+	margin-top: -25px;
+}
+
+.li-has-right-circle-btn .ui-btn-nobg {
+	margin-top: -20px;
+}
+
+/******************* list have left thumbnail image ********************/
+.ui-li-anchor.li-has-thumb > a,
+.ui-li-static.li-has-thumb {
+	padding-left: 51px;
+}
+.ui-li-anchor.li-has-thumb > a .li-thumb,
+.ui-li-static.li-has-thumb .li-thumb {
+	position: absolute;
+	left: 16px;
+	top: 50%;
+	margin-top: -13px;
+	width: 27px;
+	height: 27px;
+}
+
+/***************** list has checkbox/radio ***********************/
+.ui-li-anchor.li-has-checkbox > a,
+.ui-li-anchor.li-has-radio > a,
+.ui-li-static.li-has-checkbox,
+.ui-li-static.li-has-radio {
+	padding-left: 50px;
+}
+
+.li-has-checkbox input.ui-checkbox:first-child,
+.li-has-radio input.ui-checkbox:first-child,
+.li-has-checkbox input.ui-radio:first-child,
+.li-has-radio input.ui-radio:first-child {
+	position: absolute;
+	top: 50%;
+	margin-top: -13px;
+	left: 16px;
+}
+
+/**************** list has checkbox/radio and thumbnail ************/
+.ui-li-anchor.li-has-checkbox.li-has-thumb > a,
+.ui-li-anchor.li-has-radio.li-has-thumb > a,
+.ui-li-static.li-has-checkbox.li-has-thumb,
+.ui-li-static.li-has-radio.li-has-thumb {
+	padding-left: 77px;
+}
+.ui-li-anchor.li-has-checkbox.li-has-thumb > a .li-thumb,
+.ui-li-anchor.li-has-radio.li-has-thumb > a .li-thumb,
+.ui-li-static.li-has-checkbox.li-has-thumb .li-thumb,
+.ui-li-static.li-has-radio.li-has-thumb .li-thumb {
+	position: absolute;
+	left: 48px;
+}
+
+/**************** right toggle switch ************/
+.li-has-right-btn .ui-toggle-container {
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	right: 16px;
+	left: auto;
+}
+
+/**************** with progress bar ************/
+.li-has-progress .ui-progress {
+	margin-top: 10px;
+}
+
+/**************** multi line list style ************/
+.ui-listview .li-has-multiline.ui-li-anchor > a,
+.li-has-multiline.ui-li-static {
+	padding-top: 11px;
+	padding-bottom: 38px;
+}
+.li-has-multiline .li-text-sub {
+	top: 39px;
+	left: 16px;
+	line-height: 22px;
+	float: left;
+	text-align: left;
+	height: auto;
+}
+.li-has-multiline .li-text-sub,
+.li-has-multiline .li-text-sub3 {
+	max-width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	right: auto;
+}
+.li-has-multiline .li-text-sub .li-icon-sub,
+.li-has-multiline .li-text-sub3 .li-icon-sub,
+.li-has-multiline .li-text-sub img,
+.li-has-multiline .li-text-sub3 img {
+	position: relative;
+	width: 15px;
+	height: 15px;
+	margin-right: 1px;
+	margin-bottom: 0;
+}
+.li-has-multiline .li-text-sub2,
+.li-has-multiline .li-text-sub3 {
+	position: absolute;
+	font-size: 16px;
+	color: rgba(77, 77, 77, 1);
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	overflow: hidden;
+}
+.li-has-multiline .li-text-sub2 {
+	top: 0;
+	right: 16px;
+	float: right;
+	text-align: right;
+	height: 100%;
+	line-height: 72px;
+}
+.li-has-multiline .li-text-sub3 {
+	top: 61px;
+	left: 16px;
+	line-height: 25px;
+}
+
+.li-has-multiline.ui-li-anchor.li-has-thumb > a .li-text-sub,
+.li-has-multiline.ui-li-static.li-has-thumb .li-text-sub {
+	left: 51px;
+}
+.li-has-multiline.ui-li-anchor.li-has-checkbox > a .li-text-sub,
+.li-has-multiline.ui-li-anchor.li-has-radio > a .li-text-sub,
+.li-has-multiline.ui-li-static.li-has-checkbox .li-text-sub,
+.li-has-multiline.ui-li-static.li-has-radio .li-text-sub {
+	left: 50px;
+}
+.li-has-multiline.ui-li-anchor.li-has-thumb.li-has-checkbox > a .li-text-sub,
+.li-has-multiline.ui-li-anchor.li-has-thumb.li-has-radio > a .li-text-sub,
+.li-has-multiline.ui-li-static.li-has-thumb.li-has-checkbox .li-text-sub,
+.li-has-multiline.ui-li-static.li-has-thumb.li-has-radio .li-text-sub {
+	left: 77px;
+}
+.li-has-multiline.ui-li-anchor.li-has-thumb.li-thumbnail-right > a,
+.li-has-multiline.ui-li-static.li-has-thumb.li-thumbnail-right {
+	padding-left: 16px;
+}
+.li-has-multiline.ui-li-anchor.li-has-thumb.li-thumbnail-right > a .li-thumb,
+.li-has-multiline.ui-li-static.li-has-thumb.li-thumbnail-right .li-thumb {
+	float: right;
+	left: auto;
+	right: 16px;
+}
+.li-has-multiline.ui-li-anchor.li-has-thumb.li-thumbnail-right > a .li-text-sub,
+.li-has-multiline.ui-li-static.li-has-thumb.li-thumbnail-right .li-text-sub {
+	left: 16px;
+}
+.li-has-multiline.li-has-3-lines.ui-li-anchor > a,
+.li-has-multiline.li-has-3-lines.ui-li-static {
+	padding-bottom: 55px;
+}
+
+#current_map {
+	max-width: 100%;
+}
